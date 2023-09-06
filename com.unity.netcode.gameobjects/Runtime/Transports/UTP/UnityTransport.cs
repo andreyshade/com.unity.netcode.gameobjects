@@ -1500,6 +1500,7 @@ namespace Unity.Netcode.Transports.UTP
 #endif
 
             m_NetworkSettings.WithNetworkConfigParameters(
+                maxMessageSize: 1232,
                 maxConnectAttempts: transport.m_MaxConnectAttempts,
                 connectTimeoutMS: transport.m_ConnectTimeoutMS,
                 disconnectTimeoutMS: transport.m_DisconnectTimeoutMS,
